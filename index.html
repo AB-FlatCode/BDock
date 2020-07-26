@@ -1,22 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Starter</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:300,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <p>Welcome to your starter files. Let's code!</p>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
-  <script type="module" defer src="/js/index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Starter</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="images/logo.svg" alt="" class="header-logo__img">
+    </div>
+    <div class="header-menu">
+      <div class="header-menu__text">menu</div>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="site-container">
+        <div class="hero-content">
+          <div class="hero-text__small">
+            <h2 class="hero-text__intro">We're BrightDock</h2>
+          </div>
+          <div class="hero-text__big">
+            <div class="hero-text__tagline">
+              <span class="line">We build</span>
+              <!--  <div class="hero-text__big-stroked">
+              <svg id="heroStroke" viewBox="0 0 100 100">
+                  <text y="40">tailored</text>
+                </svg><span class="line">web</span>
+              </div>-->
+              <span class="line">tailored web</span>
+              <span class="line">and mobile</span>
+              <span class="line">solutions</span>
+            </div>
+
+          </div>
+          <div class="text-reveal"></div>
+          <div class="hero-text__desc">
+            <p>Brightdock is a prestige digital agency
+              that specialize in disruption. We help business leaders develop successful
+              digital products.</p>
+            <a href="#" class="btn btn-text">Learn more about us<span>+</span></a>
+          </div>
+          <div class="text-reveal"></div>
+        </div>
+      </div>
+      <div class="hero-socials">
+        <div class="hero-socials__item">
+          fb
+        </div>
+        <div class="hero-socials__item">
+          ln
+        </div>
+        <div class="hero-socials__item">
+          be
+        </div>
+        <div class="hero-socials__item">
+          yt
+        </div>
+      </div>
+    </section>
+    <section class="section-showcase showcase-mblue">
+      <div class="showcase-wrapper">
+        <div class="site-container-full">
+          <div class="row middle-xs">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content showcase-content--mblue">
+                <div class="showcase-content__category">App Design</div>
+                <h3 class="showcase-content__title">Airbus</h3>
+                <div class="showcase-content__text">
+                  <p>Airbus’ legendary A380 has captured many hearts - the epitome of great design and user experience.
+                    When the Airbus team
+                    came to BrightDock for a desktop app and digital environment, we knew they wanted the very best for
+                    their users.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content__media showcase-content__media--screens">
+                <img src="/images/airbus-app-image.png" alt="Airbus app">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="showcase-cta">
+      <div class="site-container">
+        <div class="showcase-cta__content">
+          <div class="showcase-cta__content-logo"><img src="images/logo.svg" alt="" class="header-logo__img"></div>
+          <div class="showcase-cta__content-text">
+            <p>Our clients love their fast, powerful new desktop app. From readily viewable chat logs to instant, easy
+              video
+              conferencing, BrightDock’s web development team has brought them even closer to clients all over the
+              world.
+            </p>
+          </div>
+          <a href="#" class="btn btn-text">How can we help you<span>+</span></a>
+        </div>
+      </div>
+    </div>
+    <section class="section-showcase showcase-red">
+      <div class="showcase-wrapper">
+        <div class="site-container-full">
+          <div class="row middle-xs">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content showcase-content--red">
+                <div class="showcase-content__category">UI / UX</div>
+                <h3 class="showcase-content__title">Sky News</h3>
+                <div class="showcase-content__text">
+                  <p>News never sleeps. For the hard-working team at Sky News, that means a constant stream of traffic
+                    as journalists around
+                    the globe flock to upload the very latest videos, articles, and photos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content__media">
+                <img src="/images/sky-news-showcase.png" alt="Sky news App" class="showcase-content__media-mock">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="showcase-cta">
+      <div class="site-container">
+        <div class="showcase-cta__content">
+          <div class="showcase-cta__content-logo"><img src="images/logo.svg" alt="" class="header-logo__img"></div>
+          <div class="showcase-cta__content-text">
+            <p>Through ticker widgets, submission previews, convenient tabbing,
+              UI design, a desktop app, and more, we’ve made Sky News easier than ever
+              for journos to navigate.
+            </p>
+          </div>
+          <a href="#" class="btn btn-text">How can we help you<span>+</span></a>
+        </div>
+      </div>
+    </div>
+    <section class="section-showcase showcase-lblue">
+      <div class="showcase-wrapper">
+        <div class="site-container-full">
+          <div class="row middle-xs">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content showcase-content--lblue">
+                <div class="showcase-content__category">New Interface</div>
+                <h3 class="showcase-content__title">Freelancer</h3>
+                <div class="showcase-content__text">
+                  <p>Freelancer.com is the world’s largest online community for independent professionals, a super
+                    high-profile gig economy
+                    platform that with over 35 million business, start-up, and specialist users.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="showcase-content__media showcase-content__media--screens">
+                <img src="/images/freelancer.png" alt="Freelancer interface">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="showcase-cta">
+      <div class="site-container">
+        <div class="showcase-cta__content">
+          <div class="showcase-cta__content-logo"><img src="images/logo.svg" alt="" class="header-logo__img"></div>
+          <div class="showcase-cta__content-text">
+            <p>While we can't reveal any specific figures, Freelancer.com's new design
+              had an amazing rollout. After their new UI/UX was implemented, our clients saw a 7-11% growth in their
+              public revenue.
+            </p>
+          </div>
+          <a href="#" class="btn btn-text">How can we help you<span>+</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="quote-cta">
+      <div class="site-container">
+        <h3 class="quote-cta__title quote-cta__title--big">Got a project?</h3>
+        <div class="quote-cta__form">
+
+          <div class="quote-cta__form-group">
+            <label class="quote-cta__form-label">Your Name</label>
+            <input type="text" class="quote-cta__form-input">
+          </div>
+
+          <div class="quote-cta__form-group">
+            <label class="quote-cta__form-label">Company Email</label>
+            <input type="text" class="quote-cta__form-input">
+          </div>
+          <h3 class="quote-cta__title quote-cta__title--small">Projected budget?</h3>
+          <div class="quote-cta__radio-items">
+
+            <div class="quote-cta__form-budget">
+              <div class="quote-cta__form-check">
+                <input class="quote-cta__form-check__input" type="radio" value="option1" checked style="display: none;">
+                <label class="quote-cta__form-check__label quote-cta__form-check__label-checked">
+                  $5k-$10k
+                </label>
+              </div>
+
+            </div>
+
+            <div class="quote-cta__form-budget">
+              <div class="quote-cta__form-check">
+                <input class="quote-cta__form-check__input" type="radio">
+                <label class="quote-cta__form-check__label">
+                  $10$-50k
+                </label>
+              </div>
+            </div>
+
+            <div class="quote-cta__form-budget">
+              <div class="quote-cta__form-check">
+                <input class="quote-cta__form-check__input" type="radio">
+                <label class="quote-cta__form-check__label">
+                  $50k-$100k
+                </label>
+              </div>
+            </div>
+
+            <div class="quote-cta__form-budget">
+              <div class="quote-cta__form-check">
+                <input class="quote-cta__form-check__input" type="radio">
+                <label class="quote-cta__form-check__label">
+                  $100k+
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-cta__form-group">
+            <label class="quote-cta__form-label">How can we help you?</label>
+            <textarea class="quote-cta__form-text__input" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary quote-cta__submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-copyright">
+      <div class="footer-copyright__image">
+        <img src="images/logo-white.svg" alt="" class="footer-logo__img">
+      </div>
+      <p class="footer-copyright__text">Copyright 2020</p>
+    </div>
+    <div class="footer-policy">Privacy Policy</div>
+    <div class="footer-socials">
+      <div class="footer-socials__item">
+        fb
+      </div>
+      <div class="footer-socials__item">
+        ln
+      </div>
+      <div class="footer-socials__item">
+        be
+      </div>
+      <div class="footer-socials__item">
+        yt
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script type="module" defer src="/js/index.js"></script>
+
 </html>

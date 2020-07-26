@@ -1,1 +1,1 @@
-console.log("welcome youtube to starter files");
+console.log("JS init completed");

@@ -1,0 +1,90 @@
+.section-showcase {
+  overflow: hidden;
+}
+
+.showcase-mblue {
+  background: #6F9BED;
+}
+
+.showcase-lblue {
+  background: #29B3FE;
+}
+
+.showcase-red {
+  background: #DC000A;
+}
+
+.showcase-wrapper {
+
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.showcase-content {
+  padding-left: 16.5rem;
+
+  &--mblue {
+    color: #001A5C;
+  }
+
+  &--lblue {
+    color: #0D1622;
+  }
+
+  &--red {
+    color: #fff;
+  }
+
+  &__category {
+    font-family: 'sangbleu_empiremedium', sans-serif;
+    font-size: 2.4rem;
+  }
+
+  &__title {
+    font-family: "gilroyheavy", sans-serif;
+    font-size: 15rem;
+    padding: 3rem 0;
+  }
+
+  &__text {
+    font-family: 'sangbleu_empiremedium', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    width: 76%;
+  }
+
+  &__media--screens {
+    position: absolute;
+    right: -180px;
+    width: 110rem;
+    top: 10%;
+  }
+
+  &__media-mock {
+    max-width: 70rem;
+    margin-left: 10rem;
+  }
+}
+
+.showcase-cta {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content-text {
+    font-size: 2.4rem;
+    font-family: 'sangbleu_empiremedium', sans-serif;
+    text-align: center;
+    width: 69%;
+    line-height: 3.6rem;
+    padding: 5rem 0;
+  }
+}

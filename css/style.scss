@@ -1,6 +1,19 @@
 @import "./normalize.scss";
+@import "./mixins.scss";
+
+@import "./fonts/stylesheet.scss";
+@import "./variables.scss";
+
+
+@import "./base.scss";
+@import "./grid.scss";
+@import "./layout.scss";
+
 
 // Components
 @import "./components/header.scss";
-@import "./components/banner.scss";
-@import "./components/features.scss";
+@import "./components/hero.scss";
+@import "./components/buttons.scss";
+@import "./components/showcase.scss";
+@import "./components/quote-cta.scss";
+@import "./components/footer.scss";

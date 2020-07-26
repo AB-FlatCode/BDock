@@ -1,0 +1,85 @@
+.section-hero {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.hero-text__small {
+  padding: 0 0 3rem 1rem;
+}
+
+.hero-text__intro {
+  font-family: 'sangbleu_empiremedium', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 400;
+}
+
+.hero-text__big {
+  font-size: 15rem;
+  line-height: 14rem;
+  font-family: "gilroyheavy", sans-serif;
+  color: $color-dark;
+
+}
+
+.hero-text__big-stroked {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.hero-text__desc {
+  margin-top: 4rem;
+  width: 50%;
+  padding-left: 2rem;
+
+  & p {
+    font-size: 2.4rem;
+    font-family: 'sangbleu_empiremedium', sans-serif;
+    line-height: 3.6rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+  }
+}
+
+#heroStroke {
+  font-family: "gilroyheavy", sans-serif;
+  width: 100%;
+  height: 120px;
+  font-size: 50px;
+}
+
+#heroStroke text {
+  fill: none;
+  stroke: #1C1B3A;
+  stroke-width: 0.5px;
+  // stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+.hero-socials {
+  position: absolute;
+  right: 40px;
+  top: 55%;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 200px;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__item {
+    writing-mode: vertical-rl;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: 'gilroymedium', sans-serif;
+  }
+}
