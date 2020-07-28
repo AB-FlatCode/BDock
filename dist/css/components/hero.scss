@@ -163,11 +163,11 @@
 
   @include respond('phone') {
     top: 42%;
-    right: 3px;
+    right: 15px;
   }
 
   @include respond('phone-small') {
-    right: 3px;
+    right: 8px;
   }
 
   &__item {

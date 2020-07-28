@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+hr {
+  height: 1px;
+  margin: 40px 0;
+  display: block;
+  clear: both;
+  background: #ccc;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+html {
+  cursor: none;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+
+  @include respond(phone) {
+    font-size: 46%;
+  }
+
+  @include respond(phone-small) {
+    font-size: 43.7%;
+  }
+
+  @include respond(tab) {
+    font-size: 50%; // 1rem = 8px; 8px/16px = 50%
+
+  }
+
+  @include respond(ipad) {
+    font-size: 52%; // 1rem = 8px; 8px/16px = 50%
+
+  }
+
+  @include respond(desk) {
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.5%
+  }
+
+}
+
+[type="checkbox"],
+[type="radio"] {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  bottom: 1px;
+  display: inline-block;
+}

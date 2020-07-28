@@ -1,0 +1,29 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  font-family: 'gilroybold', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: none;
+}
+
+.btn-text {
+  color: $color-dark;
+  font-size: 2rem;
+  //mix-blend-mode: screen;
+
+  &:hover {
+    //  color: #fff;
+  }
+
+  & span {
+    display: inline-block;
+    padding-left: 2rem;
+    font-weight: 400;
+    font-family: 'gilroymedium', sans-serif;
+  }
+}
