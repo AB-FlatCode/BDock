@@ -7,6 +7,10 @@
 
   &-logo {
     margin-left: 5rem;
+
+    @include respond("phone") {
+      margin-left: 1rem;
+    }
   }
 
   &-logo__img {
@@ -24,6 +28,10 @@
     align-items: center;
     padding: 10px 0px 10px 15px;
     border-radius: 10px 0 0px 10px;
+
+    @include respond('tab') {
+      margin-right: -15px;
+    }
   }
 
   &-menu__text {
@@ -32,6 +40,10 @@
     font-family: "gilroymedium", sans-serif;
     font-weight: 600;
     letter-spacing: 0.06em;
+
+    @include respond('phone') {
+      font-size: 11px;
+    }
   }
 
 }

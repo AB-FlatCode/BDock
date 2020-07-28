@@ -3,16 +3,62 @@
   min-height: 100vh;
   position: relative;
 
+  @include respond('desk') {
+    min-height: 115vh;
+  }
+
+  @include respond('ipad') {
+    min-height: 60vh;
+  }
+
+  @include respond('tab') {
+    min-height: 70vh;
+  }
+
+  @include respond('phone') {
+    min-height: 75vh;
+  }
+
+  @include respond('phone-small') {
+    min-height: 95vh;
+  }
+
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   width: 85%;
+
+  @include respond('desk') {
+    padding-left: 10rem;
+  }
+
+  @include respond('ipad') {
+    width: 100%;
+    padding-top: 4rem;
+  }
+
+  @include respond('tab') {
+    width: 85%;
+    padding-left: 4rem;
+    padding-top: 4rem;
+  }
+
+  @include respond('phone') {
+    width: 90%;
+    padding-left: 4rem;
+    padding-top: 2rem;
+  }
+
 }
 
 .hero-text__small {
-  padding: 0 0 3rem 1rem;
+  padding: 0 0 3rem 2rem;
+
+  @include respond('phone') {
+    padding: 0 0 2rem 1rem;
+  }
 }
 
 .hero-text__intro {
@@ -20,6 +66,10 @@
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: 400;
+
+  @include respond('phone') {
+    font-size: 2rem;
+  }
 }
 
 .hero-text__big {
@@ -27,6 +77,21 @@
   line-height: 14rem;
   font-family: "gilroyheavy", sans-serif;
   color: $color-dark;
+
+  @include respond("ipad") {
+    font-size: 13rem;
+    line-height: 12rem;
+  }
+
+  @include respond('tab') {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+
+  @include respond('phone') {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
 
 }
 
@@ -41,12 +106,26 @@
   width: 50%;
   padding-left: 2rem;
 
+  @include respond('tab') {
+    width: 72%;
+  }
+
+  @include respond('phone') {
+    margin-top: 3rem;
+    width: 80%;
+    padding-left: 1rem;
+  }
+
   & p {
     font-size: 2.4rem;
     font-family: 'sangbleu_empiremedium', sans-serif;
     line-height: 3.6rem;
     font-weight: 400;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
+
+    @include respond('phone') {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -75,11 +154,62 @@
   height: 200px;
   align-items: center;
   justify-content: flex-start;
+  z-index: 10;
+
+  @include respond("tab") {
+    right: 10px;
+    top: 45%;
+  }
+
+  @include respond('phone') {
+    top: 42%;
+    right: 15px;
+  }
+
+  @include respond('phone-small') {
+    right: 8px;
+  }
 
   &__item {
     writing-mode: vertical-rl;
     padding: 10px 0;
     font-size: 18px;
-    font-family: 'gilroymedium', sans-serif;
+    font-family: 'gilroysemibold',
+      sans-serif;
+
+    @include respond("tab") {
+      font-size: 16px;
+    }
+
+    @include respond("phone") {
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+#textStroke path {
+  stroke-dasharray: 541.4;
+  stroke-dashoffset: 541.4;
+  animation: line-anim 3s ease forwards .4s;
+  /*animation: line-anim 3s ease forwards .4s,
+   fill .9s ease forwards 1s;
+  //animation: fill .5s ease forwards .6s;*/
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #1C1B3A;
   }
 }

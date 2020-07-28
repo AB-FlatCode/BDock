@@ -1,6 +1,14 @@
 .quote-cta {
   padding: 10rem 0;
 
+  @include respond('tab') {
+    padding: 7rem 0;
+  }
+
+  @include respond('phone') {
+    padding: 5rem 0;
+  }
+
 
   &__title {
     padding-bottom: 5rem;
@@ -10,11 +18,27 @@
 
     &--big {
       font-size: 11rem;
+
+      @include respond('tab') {
+        font-size: 10rem;
+      }
+
+      @include respond('phone') {
+        font-size: 6rem;
+      }
+
+      @include respond('phone-small') {
+        font-size: 5rem;
+      }
     }
 
     &--small {
       font-size: 5rem;
       padding-top: 3rem;
+
+      @include respond('phone') {
+        font-size: 3.5rem;
+      }
     }
   }
 
@@ -42,6 +66,10 @@
     border-bottom: 1px solid #1C1B3A;
     outline: none;
     font-size: 1.5rem;
+
+    @include respond('phone') {
+      width: 35rem;
+    }
   }
 
   &__form-text__input {
@@ -51,6 +79,10 @@
     border: none;
     border-bottom: 1px solid #1C1B3A;
     font-size: 1.5rem;
+
+    @include respond('phone') {
+      width: 35rem;
+    }
   }
 
   &__form-label {
@@ -61,6 +93,10 @@
     position: absolute;
     bottom: 30px;
 
+    @include respond('phone') {
+      font-size: 1.8rem;
+    }
+
   }
 
   &__radio-items {
@@ -69,6 +105,17 @@
     width: 100rem;
     align-items: center;
     justify-content: space-around;
+
+    @include respond('tab') {
+      width: 95%;
+    }
+
+    @include respond('phone') {
+      width: 95%;
+      flex-direction: column;
+    }
+
+
   }
 
   &__form-check {
@@ -83,6 +130,8 @@
       position: relative;
 
     }
+
+
 
     &__label-checked::before {
       content: "";
@@ -109,5 +158,27 @@
     color: #fff;
     background: #1c1b3a;
     margin-top: 4rem;
+
+    @include respond('phone') {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 100px;
+      font-size: 1.4rem;
+      margin-top: 4rem;
+    }
+  }
+}
+
+@include respond('phone') {
+  label.quote-cta__form-check__label.quote-cta__form-check__label-checked {
+    margin-left: 20px;
+  }
+}
+
+@include respond('phone') {
+  .quote-cta__form-budget {
+    width: 20rem;
+    padding: 5px 0;
+    margin: 5px 0;
   }
 }

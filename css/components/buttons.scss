@@ -8,11 +8,17 @@
   font-family: 'gilroybold', sans-serif;
   font-weight: 600;
   text-decoration: none;
+  cursor: none;
 }
 
 .btn-text {
   color: $color-dark;
   font-size: 2rem;
+  //mix-blend-mode: screen;
+
+  &:hover {
+    //  color: #fff;
+  }
 
   & span {
     display: inline-block;

@@ -71,7 +71,14 @@
 
 }
 
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('/css/fonts/gilroy-semibold-webfont.woff2') format('woff2'),
+        url('gilroy-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 @font-face {
